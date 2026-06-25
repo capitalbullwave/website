@@ -1,0 +1,229 @@
+/* Shared logo / brand styles for all pages */
+
+html{
+    scrollbar-gutter:stable;
+}
+
+:root{
+    --site-header-max:1220px;
+    --site-header-pad-y:12px;
+    --site-header-pad-x:20px;
+    --nav-height:104px;
+    --nav-link-height:40px;
+}
+
+/* Unified header / navbar layout */
+.site-header{
+    position:relative;
+    z-index:1000;
+    height:var(--nav-height);
+    flex-shrink:0;
+}
+
+/* site-header already reserves navbar space — avoid double gap on main */
+.site-header + main,
+.site-header ~ main{
+    padding-top:0;
+}
+
+header.navbar,
+nav.navbar,
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:var(--nav-height);
+    z-index:1000;
+    overflow:hidden;
+    background:rgba(255,255,255,.98);
+    backdrop-filter:saturate(130%) blur(12px);
+    -webkit-backdrop-filter:saturate(130%) blur(12px);
+    border-bottom:1px solid rgba(16,24,40,.08);
+    box-shadow:0 1px 0 rgba(16,24,40,.04);
+    transition:box-shadow .28s ease, border-color .28s ease;
+}
+
+.navbar.scrolled{
+    box-shadow:0 14px 38px rgba(16,24,40,.08);
+}
+
+.site-header .nav-container,
+.navbar .nav-container,
+.navbar > .container{
+    max-width:var(--site-header-max);
+    width:100%;
+    height:var(--nav-height);
+    min-height:var(--nav-height);
+    max-height:var(--nav-height);
+    margin:0 auto;
+    padding:var(--site-header-pad-y) var(--site-header-pad-x);
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+}
+
+.navbar .nav-menu{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    flex-shrink:0;
+}
+
+.navbar .nav-menu li{
+    display:flex;
+    align-items:center;
+}
+
+.navbar .nav-menu a{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:var(--nav-link-height);
+    padding:10px 14px;
+    color:#344054;
+    font-size:15px;
+    font-weight:750;
+    line-height:1;
+    border-radius:999px;
+    border:1px solid transparent;
+    box-sizing:border-box;
+    text-decoration:none;
+    white-space:nowrap;
+    transform:none;
+    transition:color .25s ease, background .25s ease;
+}
+
+.navbar .nav-menu a::after,
+.navbar .nav-menu a::before{
+    display:none;
+    content:none;
+}
+
+.navbar .nav-menu a:hover,
+.navbar .nav-menu a.active,
+.navbar .nav-menu a[aria-current="page"]{
+    color:#1f6fff;
+    background:rgba(31,111,255,.08);
+    transform:none;
+}
+
+.navbar .nav-menu a.nav-cta,
+.navbar .nav-menu a.nav-cta:hover,
+.navbar .nav-menu a.nav-cta.active,
+.navbar .nav-menu a.nav-cta[aria-current="page"]{
+    background:linear-gradient(135deg,#1f6fff,#1648c2);
+    color:#ffffff;
+    border-color:transparent;
+    border-radius:14px;
+    box-shadow:0 6px 20px rgba(26,86,219,.28);
+    transform:none;
+}
+a.logo-box,
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    min-width:max-content;
+    text-decoration:none;
+    color:inherit;
+}
+
+.navbar .logo-box img,
+a.logo-box img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    flex-shrink:0;
+    border-radius:0;
+    box-shadow:none;
+    filter:drop-shadow(0 7px 14px rgba(16,24,40,.09));
+    transition:none;
+    transform:none;
+}
+
+.navbar .logo-box:hover img,
+a.logo-box:hover img{
+    transform:none;
+}
+
+.logo,
+.logo-text{
+    font-family:'Poppins',sans-serif;
+    font-size:26px;
+    font-weight:800;
+    letter-spacing:-.04em;
+    color:#07111f;
+    line-height:1;
+}
+
+.logo span,
+.logo-text span{
+    color:#1f6fff;
+}
+
+.footer-logo img,
+.footer-brand .logo-box img{
+    width:52px;
+    height:52px;
+    object-fit:contain;
+    border-radius:0;
+    filter:drop-shadow(0 7px 14px rgba(16,24,40,.08));
+}
+
+.footer-logo-text,
+.footer-brand .logo,
+.footer-brand .logo-text{
+    font-family:'Poppins',sans-serif;
+    font-size:24px;
+    font-weight:800;
+    letter-spacing:-.04em;
+    color:#07111f;
+    line-height:1;
+}
+
+.footer-logo-text span,
+.footer-brand .logo span,
+.footer-brand .logo-text span{
+    color:#1f6fff;
+}
+
+@media (max-width:768px){
+    :root{
+        --nav-height:76px;
+        --nav-link-height:36px;
+    }
+
+    .site-header{
+        height:var(--nav-height);
+    }
+
+    header.navbar,
+    nav.navbar,
+    .navbar{
+        height:var(--nav-height);
+    }
+
+    .site-header .nav-container,
+    .navbar .nav-container,
+    .navbar > .container{
+        padding:12px 16px;
+    }
+
+    .navbar .logo-box img,
+    a.logo-box img{
+        width:52px;
+        height:52px;
+    }
+
+    .logo,
+    .logo-text{
+        font-size:22px;
+    }
+}
