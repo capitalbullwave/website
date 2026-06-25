@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bullwavecapital.co.in/</loc>
+    <loc>https://capitalbullwave.com/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://bullwavecapital.co.in/about.html</loc>
+    <loc>https://capitalbullwave.com/about.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bullwavecapital.co.in/services.html</loc>
+    <loc>https://capitalbullwave.com/services.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bullwavecapital.co.in/plans.html</loc>
+    <loc>https://capitalbullwave.com/plans.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bullwavecapital.co.in/insight.html</loc>
+    <loc>https://capitalbullwave.com/insight.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bullwavecapital.co.in/contact.html</loc>
+    <loc>https://capitalbullwave.com/contact.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

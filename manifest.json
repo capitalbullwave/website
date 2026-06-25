@@ -1,0 +1,25 @@
+{
+  "name": "Capital Bull Wave",
+  "short_name": "Capital Bull Wave",
+  "description": "Stock market insights, trading guidance and investor support from Capital Bull Wave.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16a34a",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/static/image/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/image/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
